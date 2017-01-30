@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="videoReader" class="is.ru.honn.rutube.reader.VideoReader"></bean>
+        <bean id="userReader" class="is.ru.honn.rutube.reader.UserReader">
+            <constructor-arg ref="videoReader" />
+        </bean>
+</beans>
+
+
+
